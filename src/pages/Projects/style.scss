@@ -1,0 +1,19 @@
+$black:#171718;
+$blackBorder: #26292D;
+$white: #fff;
+$purpule: #5C62EC;
+
+$darkBg: $black;
+$darkBorder: $blackBorder;
+$headerText: $white;
+$accent: $purpule;
+
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 30px;
+}

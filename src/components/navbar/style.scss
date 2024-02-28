@@ -1,0 +1,77 @@
+$black:#171718;
+$blackBorder: #26292D;
+$white: #fff;
+$purpule: #5C62EC;
+
+$darkBg: $black;
+$darkBorder: $blackBorder;
+$headerText: $white;
+$accent: $purpule;
+
+
+
+.nav {
+    padding: 20px 0px;
+    background-color: $darkBg;
+    color: $headerText;
+    border-bottom: 1px solid $darkBorder;
+    letter-spacing: normal;
+
+        .nav-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            column-gap: 30px;
+            row-gap: 20px;
+            flex-wrap: wrap;
+            
+            .logo {
+                color: $headerText;
+                font-size: 24px;   
+                font-family: "Poppins", sans-serif;
+            }
+
+            .logo strong {
+                font-family: 700;
+            }
+
+            .nav-list {
+                display: flex;
+                align-items: center;
+                // justify-content: center;
+                column-gap: 40px;
+                row-gap: 15px;
+                font-size: 16px;
+                font-weight: 500;
+                font-family: "Poppins", sans-serif;
+                flex-wrap: wrap;
+                    
+                .nav-list__link {
+                    color: $headerText;
+                    transition: 0.3s ease-in;
+                }
+
+                .nav-list__link:hover {
+                    opacity: 0.8;
+                }
+
+                .active {
+                    position: relative;
+                }
+
+                .active::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 100%;
+                    display: block;
+                    height: 2px;
+                    width: 100%;
+                    background-color: $accent;
+                }
+            }
+        }
+}
+
+
+
